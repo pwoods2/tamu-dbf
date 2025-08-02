@@ -1,0 +1,153 @@
+/* Main CSS file for the website */
+/* styles.css */
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #f4f4f4;
+    color: #003399;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center; /* Vertically aligns the image and text */
+    justify-content: center; /* Aligns items to the left */
+    padding: 0 20px;
+}
+
+.header-image {
+    width: 50px; /* Adjust the size of the image */
+    height: auto;
+    margin-right: 20px; /* Space between the image and the text */
+}
+
+h1 {
+    font-family: 'Times';
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Horizontal offset, Vertical offset, Blur radius, Color */
+}
+
+
+nav {
+    background-color: #003399;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #003399;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background-color: #003399;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    width: 200px;
+}
+
+nav ul li ul li a {
+    padding: 10px;
+    display: block;
+}
+
+
+main {
+    padding: 2em;
+    text-align: left;
+    margin-top: -50px;
+
+}
+
+.container {
+    clear: both;
+    overflow: hidden; /* Ensures content inside the container behaves properly */
+    margin-bottom: 20px; /* Optional: Adds space below the container */
+}
+
+.right-align-image {
+    float: right;
+    margin-left: 20px; /* Adds space between the image and the text */
+    margin-bottom: 20px; /* Adds space below the image */
+    max-width: 40%; /* Adjusts the size of the image */
+    max-height: 500px;
+}
+
+.container p {
+    text-align: left;
+    line-height: 1.6; /* Optional: Increases line height for readability */
+    margin: 10px 0; /* Adds some space between paragraphs */
+}
+
+/* Container for both text and images */
+.services-container {
+    display: flex; /* Places the text and image containers side by side */
+    justify-content: space-between; /* Ensures equal space between text and image containers */
+    align-items: flex-start; /* Aligns items to the top of the container */
+    margin-bottom: 20px; /* Adds space below the container */
+}
+
+/* Text container styling */
+.text-container {
+    flex: 1; /* Takes up the remaining space for text */
+    margin-right: 20px; /* Adds space between the text and the images */
+    text-align: left; /* Aligns the text to the left */
+}
+
+/* Images container styling */
+.images-container {
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: flex-start; /* Align images to the left of the container */
+    max-width: 40%; /* Limits the size of the images container */
+}
+
+/* Styling for individual images */
+.images-container img {
+    width: 80%; /* Ensures images fit within the container */
+    height: 50;
+    max-width: 100%; /* Prevents images from overflowing */
+    margin-bottom: 10px; /* Adds space between the stacked images */
+}
+
+footer {
+    background: #003399;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
