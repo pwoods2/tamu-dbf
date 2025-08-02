@@ -36,7 +36,7 @@ h1 {
 
 
 nav {
-    background-color: #003399;
+    background-color: #500000;
 }
 
 nav ul {
@@ -58,13 +58,13 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background-color: #003399;
+    background-color: #500000;
 }
 
 nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #003399;
+    background-color: #500000;
     list-style: none;
     padding: 0;
 }
@@ -142,7 +142,7 @@ main {
 }
 
 footer {
-    background: #003399;
+    background: #d1d1d1;
     color: white;
     text-align: center;
     padding: 1em 0;
