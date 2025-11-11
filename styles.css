@@ -121,12 +121,13 @@ main {
 
 /* Text container styling */
 .text-container {
-    flex: 1; /* Takes up the remaining space for text */
-    margin-right: 20px; /* Adds space between the text and the images */
+    flex: 1; 
+    margin-right: 20px; 
     text-align: left; 
-    background-color: white; 
-    color: black; 
+    background-color: white; /* White background */
+    color: black; /* Black text */
     padding: 20px; 
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4); 
 }
 
 /* Images container styling */
@@ -141,7 +142,7 @@ main {
 /* Styling for individual images */
 .images-container img {
     width: 80%; 
-    height: 100%;
+    height: auto;
     max-width: 100%; 
     margin-bottom: 10px; 
 }
