@@ -131,6 +131,7 @@ main {
     flex-direction: column; /* Stack images vertically */
     align-items: flex-start; /* Align images to the left of the container */
     max-width: 40%; /* Limits the size of the images container */
+    justify-content: center;
 }
 
 /* Styling for individual images */
