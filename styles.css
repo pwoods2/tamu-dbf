@@ -139,7 +139,7 @@ main {
 /* Styling for individual images */
 .images-container img {
     width: 80%; 
-    height: 50px;
+    height: 100%;
     max-width: 100%; 
     margin-bottom: 10px; 
 }
