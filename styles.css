@@ -94,7 +94,8 @@ main {
     align-items: center; /* Centers content vertically */
     padding: 2em; 
     text-align: left;
-    margin-top: -50px; 
+    /* margin-top: -50px; */
+    padding: 2em;
 }
 
 .container {
@@ -122,6 +123,7 @@ main {
     display: flex;
     justify-content: space-between; 
     align-items: center; /* Vertically centers image beside text */
+    gap: 40px;
     width: 100%;
     max-width: 1000px; 
 }
