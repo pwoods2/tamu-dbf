@@ -6,6 +6,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: #500000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 header {
@@ -86,9 +89,15 @@ nav ul li ul li a {
 
 
 main {
-    padding: 2em;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    /* Calculate remaining space: 100vh - (header/nav height) - (footer height) */
+    min-height: calc(100vh - 180px); /* Adjust 180px as an estimate for header/footer combined height */
+    padding: 2em; 
     text-align: left;
-    margin-top: -50px;
+    margin-top: -50px; 
 }
 
 .container {
@@ -113,10 +122,12 @@ main {
 
 /* Container for both text and images */
 .services-container {
-    display: flex; /* Places the text and image containers side by side */
-    justify-content: space-between; /* Ensures equal space between text and image containers */
-    align-items: flex-start; /* Aligns items to the top of the container */
-    margin-bottom: 20px; /* Adds space below the container */
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    width: 100%; 
+    max-width: 1000px; /* Optional: Sets a max width for readability */
 }
 
 /* Text container styling */
@@ -137,6 +148,9 @@ main {
     align-items: center; 
     max-width: 40%; 
     margin: 0 auto;
+    background-color: white; 
+    padding: 10px; 
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.4); 
 }
 
 /* Styling for individual images */
@@ -152,8 +166,8 @@ footer {
     color: white;
     text-align: center;
     padding: 1em 0;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    position: static; 
+    color: #500000; 
 }
 
