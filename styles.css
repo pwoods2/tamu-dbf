@@ -5,7 +5,7 @@ body {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #500000;
 }
 
 header {
@@ -53,18 +53,18 @@ nav ul li {
 nav ul li a {
     display: block;
     padding: 10px 15px;
-    color: white;
+    color: #500000;
     text-decoration: none;
 }
 
 nav ul li:hover {
-    background-color: #500000;
+    background-color: #f4f4f4;
 }
 
 nav ul li ul {
     display: none;
     position: absolute;
-    background-color: #500000;
+    background-color: #f4f4f4;
     list-style: none;
     padding: 0;
 }
