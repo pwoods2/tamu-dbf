@@ -51,22 +51,54 @@
    
    <!-- Home Page -->
 <main>
-    <div class="services-container"> 
-    
-        <div class="images-container">
-            <img src="images/Maroon_Logo.png" alt="logo photo.">
-        </div>
+    <section id="gallery" class="content-section" style="display: block;">
+    <div class="photos-container">
+        <h3>Photo Gallery</h3>
 
-        <div class="text-container">
-            <h2>Socials</h2>
-            <p>Here are some slideshows for the past socials!</p>
+        <div class="photos">
+
+            <div class="photo fade">
+                <img src="images/team_fajita_pic.jpg" alt="Description of Image 1">
+            </div>
+
+            <div class="photo fade">
+                <img src="images/dino_halloween.png" alt="Description of Image 2">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </div>
+        </div>
+</section>
 </main>
     
     <footer>
         <p>2025-2026 Texas A&M DBF</p>
     </footer>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("photo");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        // Ensure the slideIndex is valid before trying to access the slide
+        if (slides.length > 0) {
+            slides[slideIndex-1].style.display = "block";
+        }
+    }
+</script>
+    
 </body>
 </html>
 
